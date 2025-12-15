@@ -9,6 +9,25 @@ claude plugin marketplace add SabhyaC26/cc-wrapped
 claude plugin install cc-wrapped
 ```
 
+### Troubleshooting Installation
+
+If you encounter an `EXDEV: cross-device link not permitted` error during installation, this is a known issue when `/tmp` and your home directory are on different filesystems. Use this manual installation workaround:
+
+```bash
+# Clone the repository directly to the plugins directory
+git clone https://github.com/SabhyaC26/cc-wrapped.git ~/.claude/plugins/installed/cc-wrapped
+
+# Install dependencies
+cd ~/.claude/plugins/installed/cc-wrapped/plugin
+npm install
+
+# Install web UI dependencies
+cd web
+bun install  # or npm install
+```
+
+After manual installation, restart Claude Code and the `/cc-wrapped:wrapped` command should be available.
+
 ## Usage
 
 Run the `/cc-wrapped:wrapped` command with optional time period:
