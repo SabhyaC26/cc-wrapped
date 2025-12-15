@@ -14,15 +14,7 @@ Spotify Wrapped-style year-in-review for Claude Code! Visualize your coding acti
 ## Installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/SabhyaC26/cc-wrapped.git
-cd cc-wrapped
-
-# Install dependencies
-npm install
-
-# Add to Claude Code plugins
-claude plugin marketplace add $(pwd)
+claude plugin marketplace add SabhyaC26/cc-wrapped
 claude plugin install cc-wrapped
 ```
 
