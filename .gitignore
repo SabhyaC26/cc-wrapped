@@ -32,3 +32,6 @@ coverage/
 # Temporary files
 *.tmp
 temp/
+
+# Personal data
+plugin/web/public/data.json
