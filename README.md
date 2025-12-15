@@ -1,15 +1,6 @@
 # Claude Code Wrapped
 
-Spotify Wrapped-style year-in-review for Claude Code! Visualize your coding activity, patterns, and insights with beautiful terminal UI.
-
-## Features
-
-- **Activity Metrics**: Messages, sessions, tool calls, and activity timeline
-- **Time Analytics**: Peak coding hours, coding persona (Night Owl, Morning Architect, etc.), busiest day
-- **Model Usage**: Preferred model (Opus vs Sonnet), token usage, cache efficiency
-- **Command Analytics**: Top slash commands, command diversity, most active project
-- **Special Achievements**: Unlock achievements like Marathon Coder, Consistency Champion, and more
-- **Interactive Terminal UI**: Beautiful boxed cards with colors and ASCII charts
+You already know what it is :p
 
 ## Installation
 
