@@ -107,7 +107,7 @@ node plugin/scripts/wrapped-analyzer.js --period month
 node plugin/scripts/wrapped-analyzer.js --period week
 
 # Test specific year
-node plugin/scripts/wrapped-analyzer.js --period 2024
+node plugin/scripts/wrapped-analyzer.js --period 2025
 ```
 
 ## Contributing

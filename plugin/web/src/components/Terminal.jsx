@@ -77,7 +77,7 @@ const StatCard = ({ label, value, subtext, delay = 0 }) => {
                 ) : typeof value === 'string' && value.includes('/') ? (
                     value
                 ) : (
-                    <CountUp end={value} duration={1200} delay={delay} />
+                    <CountUp end={value} duration={2000} delay={delay} />
                 )}
             </div>
             {subtext && <div className="stat-sub">{subtext}</div>}
@@ -118,6 +118,7 @@ const Terminal = ({ data }) => {
 
                 <div className="section grid-stats">
                     <StatCard label="🎯 Sessions" value={data.activity.totalSessions ? data.activity.totalSessions : 'N/A'} delay={2500} />
+                    <StatCard label="🪙 Tokens" value={data.model.totalTokens} delay={3300} />
                     <StatCard label="💬 Messages" value={data.activity.totalMessages} delay={2600} />
                     <StatCard label="📅 Active Days" value={data.activity.daysActive} delay={2700} />
                     <StatCard label="🔥 Longest Streak" value={`${data.activity.longestStreak} days`} delay={2800} />
