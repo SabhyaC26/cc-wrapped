@@ -11,23 +11,23 @@ claude plugin install cc-wrapped
 
 ## Usage
 
-Run the `/wrapped` command with optional time period:
+Run the `/cc-wrapped:wrapped` command with optional time period:
 
 ```bash
 # Current year (default)
-/wrapped
+/cc-wrapped:wrapped
 
 # Last 30 days
-/wrapped month
+/cc-wrapped:wrapped month
 
 # Last 7 days
-/wrapped week
+/cc-wrapped:wrapped week
 
 # All-time stats
-/wrapped all
+/cc-wrapped:wrapped all
 
 # Specific year
-/wrapped 2024
+/cc-wrapped:wrapped 2025
 ```
 
 ## Data Sources

@@ -75,7 +75,7 @@
       },
       {
         "command": "/cc",
-        "count": 11
+        "count": 13
       },
       {
         "command": "/claude",
@@ -91,7 +91,7 @@
       }
     ],
     "commandDiversity": 18,
-    "totalCommands": 158,
+    "totalCommands": 195,
     "mostActiveProject": {
       "path": "/Users/sabhyachhabria/Desktop/claude-intent",
       "name": "claude-intent",
