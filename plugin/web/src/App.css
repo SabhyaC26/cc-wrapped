@@ -1,0 +1,37 @@
+.app-container {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 90vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.loading,
+.error {
+    font-size: 1.5rem;
+    color: var(--term-accent);
+    text-align: center;
+    margin-top: 20vh;
+    font-weight: bold;
+    letter-spacing: 2px;
+    animation: pulse 2s infinite;
+}
+
+.error {
+    color: #ff4444;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}

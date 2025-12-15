@@ -1,0 +1,15 @@
+{
+  "owner": {
+    "name": "sabhyachhabria"
+  },
+  "name": "cc-wrapped",
+  "description": "Claude Code Wrapped - Spotify Wrapped-style year-in-review for Claude Code",
+  "plugins": [
+    {
+      "name": "cc-wrapped",
+      "source": "./plugin",
+      "version": "1.0.0",
+      "description": "Spotify Wrapped-style year-in-review for Claude Code - visualize your coding activity, patterns, and insights"
+    }
+  ]
+}

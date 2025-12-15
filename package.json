@@ -1,0 +1,24 @@
+{
+  "name": "cc-wrapped",
+  "version": "1.0.0",
+  "description": "Spotify Wrapped-style year-in-review for Claude Code",
+  "main": "plugin/scripts/wrapped-analyzer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "claude-code",
+    "wrapped",
+    "analytics",
+    "stats",
+    "year-in-review"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "boxen": "^5.1.2",
+    "asciichart": "^1.5.25",
+    "date-fns": "^3.0.0"
+  }
+}

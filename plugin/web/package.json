@@ -1,0 +1,26 @@
+{
+  "name": "web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run dev-server.js",
+    "build": "bun run build.js",
+    "serve": "bun run serve.js",
+    "start": "bun run build.js && bun run serve.js",
+    "lint": "eslint .",
+    "preview": "bun run serve.js"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "globals": "^16.5.0"
+  }
+}

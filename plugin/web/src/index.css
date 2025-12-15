@@ -1,0 +1,47 @@
+:root {
+  --term-bg: #0a0e14;
+  --term-glass: rgba(16, 20, 30, 0.75);
+  --term-border: rgba(255, 255, 255, 0.1);
+  --term-accent: #d97757;
+  --term-accent-dim: rgba(217, 119, 87, 0.2);
+  --term-text: #e0e6ed;
+  --term-text-dim: #8b9bb4;
+  --term-font: 'JetBrains Mono', 'Fira Code', 'SF Mono', 'Roboto Mono', monospace;
+}
+
+body {
+  margin: 0;
+  background-color: #000000;
+  color: var(--term-text);
+  font-family: var(--term-font);
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--term-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--term-text-dim);
+}
+
+.glow-text {
+  text-shadow: 0 0 10px var(--term-accent-dim);
+}

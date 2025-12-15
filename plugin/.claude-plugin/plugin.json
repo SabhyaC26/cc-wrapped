@@ -1,0 +1,17 @@
+{
+  "name": "cc-wrapped",
+  "version": "1.0.0",
+  "description": "Spotify Wrapped-style year-in-review for Claude Code - visualize your coding activity, patterns, and insights",
+  "author": {
+    "name": "CC Wrapped Contributors"
+  },
+  "license": "MIT",
+  "keywords": [
+    "wrapped",
+    "analytics",
+    "stats",
+    "visualization",
+    "year-in-review"
+  ],
+  "commands": "./commands"
+}

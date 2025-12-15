@@ -1,0 +1,11 @@
+{
+  "name": "cc-wrapped",
+  "version": "1.0.0",
+  "description": "Spotify Wrapped-style year-in-review for Claude Code",
+  "main": "scripts/wrapped-analyzer.js",
+  "dependencies": {
+    "boxen": "^5.1.2",
+    "chalk": "^4.1.2",
+    "date-fns": "^2.30.0"
+  }
+}
