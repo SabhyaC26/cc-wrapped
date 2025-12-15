@@ -13,21 +13,16 @@ Spotify Wrapped-style year-in-review for Claude Code! Visualize your coding acti
 
 ## Installation
 
-### Local Installation
-
 ```bash
-cd /Users/sabhyachhabria/Desktop/cc-wrapped
+# Clone the repository
+git clone https://github.com/SabhyaC26/cc-wrapped.git
+cd cc-wrapped
+
+# Install dependencies
 npm install
 
 # Add to Claude Code plugins
-claude plugin marketplace add /Users/sabhyachhabria/Desktop/cc-wrapped
-claude plugin install cc-wrapped
-```
-
-### From GitHub (Future)
-
-```bash
-claude plugin marketplace add username/cc-wrapped
+claude plugin marketplace add $(pwd)
 claude plugin install cc-wrapped
 ```
 
@@ -52,20 +47,6 @@ Run the `/wrapped` command with optional time period:
 /wrapped 2024
 ```
 
-## Example Output
-
-The plugin displays an interactive series of cards showing:
-
-1. **Title Card**: Welcome message with time period
-2. **Activity Card**: Total messages, sessions, tool calls, activity timeline
-3. **Peak Hours Card**: Top 3 coding hours, coding persona, busiest day
-4. **Model Usage Card**: Preferred AI model, token usage, cache efficiency
-5. **Top Commands Card**: Most-used slash commands with bar charts
-6. **Achievements Card**: Special achievements and insights
-7. **Summary Card**: Longest session, streak, and final message
-
-Press Enter to progress through each card!
-
 ## Data Sources
 
 Claude Code Wrapped analyzes data from:
@@ -80,14 +61,6 @@ No background tracking required - all analysis is done on-demand!
 - Node.js 14+
 - Claude Code CLI
 - Active Claude Code usage (to have data to analyze)
-
-## Dependencies
-
-- `chalk` - Terminal colors and styling
-- `boxen` - Beautiful bordered boxes
-- `asciichart` - ASCII chart generation
-- `date-fns` - Date manipulation and formatting
-- `readline-sync` - Interactive terminal prompts
 
 ## Development
 
@@ -145,43 +118,6 @@ node plugin/scripts/wrapped-analyzer.js --period week
 node plugin/scripts/wrapped-analyzer.js --period 2024
 ```
 
-## Metrics Explained
-
-### Activity Metrics
-- **Total Messages**: All messages sent to Claude Code
-- **Total Sessions**: Number of unique coding sessions
-- **Total Tool Calls**: Number of tool executions (Read, Write, Edit, etc.)
-- **Average Messages per Session**: Productivity indicator
-- **Most Active Day**: Day with highest message count
-- **Days Active**: Total unique days with activity
-- **Longest Streak**: Consecutive days of coding
-
-### Time Analytics
-- **Peak Hours**: Top 3 hours with most activity
-- **Coding Persona**: Classification based on active hours
-  - Night Owl: Active 10 PM - 4 AM
-  - Morning Architect: Active 5 AM - 11 AM
-  - Afternoon Optimizer: Active 12 PM - 5 PM
-- **Busiest Day**: Day of week with most activity
-
-### Model Usage
-- **Preferred Model**: Most-used Claude model (Opus 4.5 or Sonnet 4.5)
-- **Total Tokens**: Sum of all input/output tokens
-- **Cache Efficiency**: Ratio of cache reads to cache creation
-
-### Command Analytics
-- **Top Commands**: Most frequently used slash commands
-- **Command Diversity**: Number of unique commands used
-- **Most Active Project**: Project directory with most activity
-
-### Achievements
-Unlock special achievements based on your activity:
-- **Marathon Coder**: Sessions over 10 hours
-- **Consistency Champion**: 7+ day coding streak
-- **Feature Explorer**: 10+ unique commands used
-- **Plugin Enthusiast**: Heavy /plugin usage
-- **Power User**: 50+ messages per session average
-
 ## Contributing
 
 Contributions welcome! Please feel free to submit issues and pull requests.
@@ -189,13 +125,3 @@ Contributions welcome! Please feel free to submit issues and pull requests.
 ## License
 
 MIT
-
-## Author
-
-CC Wrapped Contributors
-
-## Acknowledgments
-
-Inspired by Spotify Wrapped - bringing the same joy of data visualization to coding!
-
-Built for the Claude Code community with love.
